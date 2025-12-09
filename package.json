@@ -1,13 +1,19 @@
 {
   "name": "vercel-file-host",
   "version": "1.0.0",
-  "description": "File hosting on Vercel",
+  "description": "File hosting on Vercel with MongoDB",
+  "engines": {
+    "node": "18.x"
+  },
+  "type": "module",
   "scripts": {
     "dev": "vercel dev"
   },
   "dependencies": {
+    "mongodb": "^6.0.0",
     "formidable": "^3.5.1",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "busboy": "^1.6.0"
   },
   "devDependencies": {
     "vercel": "^28.16.0"
